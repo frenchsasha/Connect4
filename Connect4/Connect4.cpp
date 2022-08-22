@@ -147,7 +147,7 @@ int main()
       cout << "Enter an integer between 1 and 7:";
       cin >> move;
 
-      while (!cin || move <= 1 || move >= 7) {
+      while (!cin || move < 1 || move > 7) {
           cin.clear();    // Restore input stream to working state
           cin.ignore(100, '\n');    // Get rid of any garbage that user might have entered
           cout << "I said enter an integer between 1 and 7, Dumbass.\n"<< "Try again: ";
